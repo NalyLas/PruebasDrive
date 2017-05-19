@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ptmarketing04.pruebasdrive.MainActivity">
+
+    <Button
+        android:id="@+id/btCrear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:onClick="crearCarpeta"
+        android:text=" Crear carpeta" />
+
+    <Button
+        android:id="@+id/btArchivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="crearFichero"
+        android:text="crear archivo"
+        android:layout_below="@+id/btCrear"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btCrearFichAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btArchivo"
+        android:layout_centerHorizontal="true"
+        android:onClick="createFileWithActivity"
+        android:layout_marginTop="19dp"
+        android:text="Crear Actividad" />
+
+    <Button
+        android:id="@+id/btEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btCrearFichAct"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Eliminar" />
+
+    <Button
+        android:id="@+id/btActividad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btEliminar"
+        android:layout_alignStart="@+id/btEliminar"
+        android:layout_below="@+id/btEliminar"
+        android:layout_marginTop="22dp"
+        android:text="Archivos" />
+
+    <Button
+        android:id="@+id/btMeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btActividad"
+        android:layout_alignRight="@+id/btActividad"
+        android:layout_below="@+id/btActividad"
+        android:layout_marginTop="26dp"
+        android:text="Metadatos" />
+</RelativeLayout>
